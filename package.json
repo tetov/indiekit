@@ -1,0 +1,28 @@
+{
+  "name": "mediapub.tetov.xyz",
+  "version": "1.0.0",
+  "description": "mediapub endpoint indiekit conf",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anton Tetov",
+  "license": "Unlicense",
+  "dependencies": {
+    "@indiekit/indiekit": "^0.1.4",
+    "@indiekit/store-github": "^0.1.4",
+    "dotenv": "^10.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tetov/mediapub.tetov.xyz.git"
+  },
+  "keywords": [
+    "indieweb",
+    "mediapub"
+  ],
+  "bugs": {
+    "url": "https://github.com/tetov/mediapub.tetov.xyz/issues"
+  },
+  "homepage": "https://github.com/tetov/mediapub.tetov.xyz#readme"
+}
