@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "mediapub endpoint indiekit conf",
   "main": "index.js",
+  "type": "module",
   "scripts": {
+    "start": "node -r dotenv/config --use_strict index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Anton Tetov",
