@@ -4,6 +4,7 @@
   "description": "mediapub endpoint indiekit conf",
   "main": "index.js",
   "type": "module",
+  "private": "true",
   "scripts": {
     "start": "node -r dotenv/config --use_strict index.js",
     "test": "echo \"Error: no test specified\" && exit 1"

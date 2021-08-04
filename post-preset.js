@@ -9,26 +9,26 @@ const XyzPreset = class {
     this.name = "xyz";
   }
 
-  rootDir = "content";
-  dateFormat = "{yyyy}{MM}{dd}";
-
   _makePostType = ({
     typeName,
     typeDir,
     preSlug = "",
     includeMedia = false,
   }) => {
+    const rootDir = "content";
+    const dateFormat = "{yyyy}{MM}{dd}";
+
     const type = {
       type: typeName.toLowerCase(),
       name: typeName[0].toUpperCase() + typeName.slice(1),
       post: {
-        path: `${this.rootDir}/${typeDir}/${this.dateFormat}-{slug}.md`,
-        url: `${preSlug}${this.dateFormat}-{slug}`,
+        path: `${rootDir}/${typeDir}/${dateFormat}-{slug}.md`,
+        url: `${preSlug}${dateFormat}-{slug}`,
       },
     };
     type.media = includeMedia
       ? {
-          path: `${this.rootDir}/${typeDir}/${this.dateFormat}-{filename}`,
+          path: `${rootDir}/${typeDir}/${dateFormat}-{filename}`,
         }
       : undefined;
     return type;
