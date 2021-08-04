@@ -1,7 +1,7 @@
 {
-  "name": "mediapub.tetov.xyz",
-  "version": "1.0.0",
-  "description": "mediapub endpoint indiekit conf",
+  "name": "indiekit",
+  "version": "0.1.0",
+  "description": "micropub endpoint indiekit conf",
   "type": "module",
   "private": "true",
   "scripts": {
@@ -17,14 +17,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tetov/mediapub.tetov.xyz.git"
+    "url": "git+https://github.com/tetov/indiekit.git"
   },
   "keywords": [
     "indieweb",
     "mediapub"
   ],
   "bugs": {
-    "url": "https://github.com/tetov/mediapub.tetov.xyz/issues"
+    "url": "https://github.com/tetov/indiekit/issues"
   },
-  "homepage": "https://github.com/tetov/mediapub.tetov.xyz#readme"
+  "homepage": "https://github.com/tetov/indiekit#readme"
 }
