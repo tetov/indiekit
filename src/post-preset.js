@@ -16,7 +16,7 @@ const XyzPreset = class {
     includeMedia = false,
   }) => {
     const rootDir = "content";
-    const dateFormat = "{yyyy}{MM}{dd}";
+    const dateFormat = "{t}";
 
     const type = {
       type: typeName.toLowerCase(),
@@ -36,7 +36,8 @@ const XyzPreset = class {
 
   _makePostTypeProps = [
     { typeName: "article", typeDir: "posts", includeMedia: true },
-    { typeName: "note", typeDir: "notes", includeMedia: false },
+    { typeName: "note", typeDir: "notes", includeMedia: true },
+    /*
     {
       typeName: "photo",
       typeDir: "other",
@@ -81,6 +82,7 @@ const XyzPreset = class {
       includeMedia: true,
     },
     { typeName: "like", typeDir: "other", preSlug: "o/", includeMedia: true },
+    */
   ];
 
   /**
