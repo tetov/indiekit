@@ -1,6 +1,6 @@
 {
   "name": "indiekit",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "private": "true",
   "description": "micropub endpoint indiekit conf",
   "keywords": [
@@ -23,12 +23,13 @@
   ],
   "scripts": {
     "start": "node --use_strict src/index.js",
-    "dev": "DEBUG=indiekit:* node --use_strict -r dotenv/config src/index.js",
+    "dev": "DEBUG=indiekit:* nodemon -r dotenv/config src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "@indiekit/indiekit": "^0.1.4",
-    "@indiekit/store-github": "^0.1.4"
+    "@indiekit/store-github": "^0.1.4",
+    "@indiekit/syndicator-twitter": "^0.1.3"
   },
   "devDependencies": {
     "dotenv": "^10.0.0",

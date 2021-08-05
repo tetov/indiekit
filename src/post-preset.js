@@ -50,12 +50,14 @@ const XyzPreset = class {
       preSlug: "o/",
       includeMedia: true,
     },
+    */
     {
       typeName: "bookmark",
       typeDir: "other",
       preSlug: "o/",
       includeMedia: true,
     },
+    /*
     {
       typeName: "checkin",
       typeDir: "other",
