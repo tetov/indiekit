@@ -1,6 +1,6 @@
 import { Indiekit } from "@indiekit/indiekit";
 import { GithubStore } from "@indiekit/store-github";
-import XyzPreset from "./post-preset.js";
+import getPostTypes from "./post-types.js";
 import { TwitterSyndicator } from "@indiekit/syndicator-twitter";
 
 // Create a new indiekit instance
@@ -17,14 +17,11 @@ const github = new GithubStore({
   token: process.env.GITHUB_TOKEN, // GitHub personal access token
 });
 
-const xyz = new XyzPreset();
-
 // Configure publication
 indiekit.set("publication.me", process.env.URL);
 indiekit.set("publication.timeZone", process.env.PUB_TZ);
 indiekit.set("publication.store", github);
-
-indiekit.set("publication.preset", xyz);
+indiekit.set("publication.postTypes", getPostTypes());
 
 const twitter = new TwitterSyndicator({
   apiKey: process.env.TWITTER_API_KEY,
