@@ -11,6 +11,9 @@
   },
   "author": "Anton Tetov",
   "license": "Unlicense",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "dependencies": {
     "@indiekit/indiekit": "^0.1.4",
     "@indiekit/store-github": "^0.1.4",
