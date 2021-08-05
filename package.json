@@ -30,5 +30,8 @@
   "bugs": {
     "url": "https://github.com/tetov/indiekit/issues"
   },
-  "homepage": "https://github.com/tetov/indiekit#readme"
+  "homepage": "https://github.com/tetov/indiekit#readme",
+  "files": [
+    "src/**/*"
+  ]
 }
