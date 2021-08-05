@@ -5,8 +5,9 @@
   "type": "module",
   "private": "true",
   "scripts": {
-    "start": "node -r dotenv/config --use_strict src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node --use_strict src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package": "npm shrinkwrap && npm pack && npm i --package-lock-only"
   },
   "author": "Anton Tetov",
   "license": "Unlicense",
