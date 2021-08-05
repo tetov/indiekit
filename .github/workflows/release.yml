@@ -25,7 +25,7 @@ jobs:
           cache: "npm"
 
       - name: Update to latest npm (for node ver)
-        run: npm -g u npm
+        run: npm -g up npm
 
       - name: Wrapped in plastic
         run: npm shrinkwrap
