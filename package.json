@@ -1,37 +1,38 @@
 {
   "name": "indiekit",
   "version": "0.2.0",
-  "description": "micropub endpoint indiekit conf",
-  "type": "module",
   "private": "true",
-  "scripts": {
-    "start": "node --use_strict src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "package": "npm shrinkwrap && npm pack && npm i --package-lock-only"
-  },
-  "author": "Anton Tetov",
-  "license": "Unlicense",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
-  "dependencies": {
-    "@indiekit/indiekit": "^0.1.4",
-    "@indiekit/store-github": "^0.1.4",
-    "dotenv": "^10.0.0"
+  "description": "micropub endpoint indiekit conf",
+  "keywords": [
+    "indieweb",
+    "mediapub"
+  ],
+  "homepage": "https://github.com/tetov/indiekit#readme",
+  "bugs": {
+    "url": "https://github.com/tetov/indiekit/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tetov/indiekit.git"
   },
-  "keywords": [
-    "indieweb",
-    "mediapub"
-  ],
-  "bugs": {
-    "url": "https://github.com/tetov/indiekit/issues"
-  },
-  "homepage": "https://github.com/tetov/indiekit#readme",
+  "license": "Unlicense",
+  "author": "Anton Tetov",
+  "type": "module",
   "files": [
     "src/**/*"
-  ]
+  ],
+  "scripts": {
+    "start": "node --use_strict src/index.js",
+    "dev": "DEBUG=indiekit:* node --use_strict -r dotenv/config src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@indiekit/indiekit": "^0.1.4",
+    "@indiekit/store-github": "^0.1.4"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "prettier": "^2.3.2",
+    "prettier-plugin-packagejson": "^2.2.11"
+  }
 }
