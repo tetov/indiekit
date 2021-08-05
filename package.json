@@ -1,6 +1,6 @@
 {
   "name": "indiekit",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "micropub endpoint indiekit conf",
   "type": "module",
   "private": "true",
